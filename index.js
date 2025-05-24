@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 // Render QR Preview page with Open Graph tags
 app.get('/qr-preview', (req, res) => {
-  const ogImageUrl = `${req.protocol}://${req.get('host')}/qr-image.png`;
+  const ogImageUrl = `https://qr-preview.onrender.com/qr-image.png`;
   res.render('qr', { ogImageUrl });
 });
 
